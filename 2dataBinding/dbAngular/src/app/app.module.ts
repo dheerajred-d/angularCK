@@ -8,6 +8,7 @@ import { IpComponent } from './databinding/ip.component';
 import { CodekulComponent } from './codekul/codekul.component';
 import { AndroidComponent } from './android/android.component';
 import { AngComponent } from './codekul/ang/ang.component';
+import { ThingsComponent } from './android/things.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { AngComponent } from './codekul/ang/ang.component';
     IpComponent,
     CodekulComponent,
     AndroidComponent,
-    AngComponent
+    AngComponent,
+    ThingsComponent
   ],
   imports: [
     BrowserModule
