@@ -9,6 +9,7 @@ export class DatabindingComponent implements OnInit {
   componentName : string;
   ipType : string;
   border : string;
+  dynWd : string = '400px';
   constructor() {
     this.componentName ='Android';
     this.ipType = 'button';
@@ -16,6 +17,10 @@ export class DatabindingComponent implements OnInit {
    }
   onePlusOne(){
     return 1 + 1;
+  }
+  changeBorder(){
+    console.log('Hi');
+    this.border = '1px solid blue';
   }
   ngOnInit() {
   }

@@ -16,10 +16,15 @@ import { Component, OnInit , Input } from '@angular/core';
 })
 export class IpComponent implements OnInit {
   
-  @Input()
-  
-  address : string;
-  constructor() { }
+  @Input('add') address : string;
+
+  @Input () emp : {};
+  constructor() { 
+    this.emp = {
+      name:'android',
+      dsg:456
+    }
+  }
 
   ngOnInit() {
   }

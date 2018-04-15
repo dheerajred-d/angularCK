@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-things',
   template: `
     <h1>
-      things works!
+      things is the sub component of Android component works!
     </h1>
   `,
   styles: []
