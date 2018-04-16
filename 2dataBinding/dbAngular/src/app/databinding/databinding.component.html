@@ -43,17 +43,22 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h3>Event  Binding</h3>
+                <h3>Event Binding</h3>
                 <div>
                     <input type="button" value="Bind Event" (click)=" changeBorder()" class="btn-primary">
                 </div>
-        
-                <hr>
-               <div>
-                   <input type="text" [style.width]="dynWd" (mouseenter)="dynWd='300px'" (mouseleave)="dynWd='500px'">
-               </div>
 
-        
+                <hr>
+                <div>
+                    <input type="text" [style.width]="dynWd" (mouseenter)="dynWd='300px'" (mouseleave)="dynWd='500px'">
+                </div>
+                <hr>
+                <hr>
+                <hr>
+                <hr>
+                <h1>Displaying Out put data from custom event Binding from input component to outPut Component</h1>
+                <app-op (ommiter)="myData($event)"></app-op>
+                outPut Data is {{outData}};
             </div>
         </div>
     </div>
