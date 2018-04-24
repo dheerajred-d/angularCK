@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Directives</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Attribute Directives</h3>
+            <div>
+                <input type="text" [ngStyle]="{ 'border': '1px solid '+textColor }">
+            </div>
+            <div [ngClass]="{well : isWell}">
+
+                Android current
+                <input type="text" [(ngModel)]="textColor" />
+
+
+            </div>
+            <input type="button" value="Toggle" (click)="isWell = !isWell" />
+        </div>
+    </div>
+</div>
