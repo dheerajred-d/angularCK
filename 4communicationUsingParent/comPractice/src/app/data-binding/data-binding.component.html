@@ -1,0 +1,38 @@
+<div class="container">
+ <div class="row">
+   <div class="col-md-12">
+     <h3 class="text-center">Property Binding</h3>
+     <div [style.border]="border">
+       <input [type]="ipType" value="okay">
+     </div>
+   </div>
+ </div>
+ 
+ 
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="text-center">Event-Binding</h3>
+      <div>
+        <input type="button" class="btn btn-primary" value="okay" (click)="chamgeBorder()">
+      </div>
+      <div>
+        <input type="text" [style.width]="dynaWidth" (mouseenter)="dynaWidth='300px';" (mouseleave)="dynaWidth='200px';">
+      </div>
+    </div>
+  </div>
+
+
+  <hr>
+  <div class="row">
+    <div class="jumbotron">
+      <h3 class="text-center">Parent Component dataBinding</h3>
+        <app-former (formEv)="control= $event"></app-former>
+         <hr>
+
+         <app-grasper [ipCtl]="control"></app-grasper>
+    {{control}}
+        </div>
+  </div>
+</div>
+
+
