@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { ResizerDirective } from './directives/resizer.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    ResizerDirective
   ],
   imports: [
     BrowserModule,
