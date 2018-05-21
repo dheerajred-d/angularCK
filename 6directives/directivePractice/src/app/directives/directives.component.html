@@ -13,7 +13,7 @@
       </div>
 
       <div [ngClass]="{'jumbotron':isJumbo}">My Name is Lakhan
-<input type="text" [(ngModel)]="textColor">{{textColor}}
+  <input type="text" [(ngModel)]="textColor">{{textColor}}
       </div>
       <input type="button" value="Toggle" (click)="isJumbo = !isJumbo">
     </div>
@@ -21,10 +21,7 @@
 <hr>
 <hr>
 <hr>
-<hr>
-<hr>
-<hr>
-<hr>
+
 
   <div class="row">
     <div class="col-md-12">
@@ -35,4 +32,22 @@
      
     </div>
   </div>
+
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<div class="row">
+  <div class="col-md-12">
+    <h3>Structural Directives</h3>
+    <ul>
+      <li *ngFor="let mobile of mobiles; let pos = index;">{{mobile }}{{pos+1}}</li>
+    </ul>
+  </div>
+</div>
+
 </div>
