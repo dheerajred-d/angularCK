@@ -13,10 +13,17 @@ import { RemoteService } from './remote.service';
         </ul>
     </div>
   </div>
+
+   <div class="row">
+    <div class="col-md-12">
+       <input type="text" #nm/><input type="button" class="btn btn-primary" value="Add" (click)="addNew(nm.value)">
+    </div>
+  </div>
 </div>
   `,
-  styles: [],
-  providers : [RemoteService]
+  styles: []
+  // ,
+  // providers : [RemoteService]
 })
 export class RemOneComponent  {
   names: string[];
@@ -28,6 +35,11 @@ export class RemOneComponent  {
     this.names = remote.getNames();
   }
 
-
+   addNew(temp: string) {
+    //  console.log
+    this.remote.addName(temp);
+    this.remote.publish(temp);
+    //  this.names = this.remote.getNames();
+   }
 
 }
